@@ -56,5 +56,5 @@ If any optional paths are included then the cache is always invalidated when the
        vendor/bin/phpstan analyse -vv
        # Result cache restored. 0 files will be reanalysed.
 
-> The cache is not invalidated the paths have remained relative.
+> The cache is not invalidated because the paths have remained relative.
    
