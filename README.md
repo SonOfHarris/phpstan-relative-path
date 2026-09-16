@@ -4,7 +4,7 @@ Steps to demonstrate that optional paths (defined via `(?)`) are stored as an ab
 If any optional paths are included then the cache is always invalidated when there is a change to the anchor directory.
 
 
-## Steps to reproduce
+## Build the cache
 
 1. Clone repository
 
@@ -21,7 +21,7 @@ If any optional paths are included then the cache is always invalidated when the
 
 > The `src/Optional` and `src/Ignored` entries will be absolute rather than relative.
 
-## Invalidating the cache
+## Invalidate the cache
 
 1. Rename the repository folder to anything else
 
@@ -34,12 +34,11 @@ If any optional paths are included then the cache is always invalidated when the
 
 > The `src/Optional` and `src/Ignored` entries will have a different absolute path which caused the cache to be invalidated.
 
-## Required path behaviour
+## Using required paths
 
-1. Replace the phpstan file with the required version:
+1. Replace the configuration file with the required version:
 
        cp phpstan.required.neon phpstan.neon
-       mkdir src/Ignored src/Optional
 
 2. Run phpstan:
 
